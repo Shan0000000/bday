@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>প্রশ্নোত্তর খেলা</title>
+  <link rel="stylesheet" href="../static/home.css"/>
+</head>
+<body>
+  <div class="wrapper">
+    <form method="POST" action="{{ url_for('bday') }}">
+      <h1> প্রত্যেক ক্রিয়ার একটি সমান ও বিপরীত প্রতিক্রিয়া থাকে।</h1>
+
+      <div class="input-box">
+        <label>১. কেমন আছো?</label>
+        <input type="text" name="q1" required />
+      </div>
+
+      <div class="input-box">
+        <label>২.tan(45)= ?</label>
+        <input type="text" name="q2" required />
+      </div>
+
+      <div class="input-box">
+        <label>I have no questions</label>
+        <input type="text" name="q3" />
+      </div>
+
+      <div class="input-box">
+        <label>৪.২০২৪ খারাপ ছিল, না এখনকার বছরটা </label>
+        <input type="text" name="q4" required />
+      </div>
+
+      <button type="submit" class="btn">জমা দাও</button>
+    </form>
+  </div>
+</body>
+</html>
